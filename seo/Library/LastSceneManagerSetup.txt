@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/3rdModel.unity
+- path: Assets/Scenes/FirstScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
