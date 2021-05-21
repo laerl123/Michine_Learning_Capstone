@@ -60,6 +60,9 @@
     <Compile Include="Assets\Script\cshPanelActive.cs" />
     <Compile Include="Assets\Script\cshInfoPanel.cs" />
     <Compile Include="Assets\Script\cshSceneState.cs" />
+    <Compile Include="Assets\Script\csh1stCalculator.cs" />
+    <Compile Include="Assets\Script\cshCCTVData.cs" />
+    <Compile Include="Assets\Script\cshCCTVText.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
