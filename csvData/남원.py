@@ -17,8 +17,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("순창IC-남원JC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -33,8 +33,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("남원JC-남원IC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -50,8 +50,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("남원JC-순창IC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -67,8 +67,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("남원IC-남원JC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -84,8 +84,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("서남원IC-남원JC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -101,8 +101,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("남원JC-북남원IC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -118,8 +118,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("남원JC-서남원IC")
 print("y=",model.coef_,"x +",model.intercept_)
@@ -135,8 +135,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("북남원IC-남원JC")
 print("y=",model.coef_,"x +",model.intercept_)
