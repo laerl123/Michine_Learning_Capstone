@@ -15,8 +15,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("수원신갈-기흥")
 #print("기울기 = ",model.coef_)
@@ -37,8 +37,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("기흥-기흥동탄")
 #print("기울기 = ",model.coef_)
@@ -59,8 +59,8 @@ model = LinearRegression()
 model.fit(X, y)
 
 
-plt.scatter(X, y)
-plt.show()
+#plt.scatter(X, y)
+#plt.show()
 
 print("기흥동탄-동탄")
 #print("기울기 = ",model.coef_)
