@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.Diagnostics;
 using UnityEngine;
 
 public class csh1stCalculator : MonoBehaviour
@@ -10,7 +12,12 @@ public class csh1stCalculator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Process ps = new Process();
+        ps.StartInfo.FileName = "C:/Users/seo/AppData/Local/Programs/Python/Python38/python.exe";
+        ps.StartInfo.Arguments = "C:/Users/seo/Desktop/Michine_Learning_Capstone/seo/Assets/PythonCode/test.py";
+        ps.StartInfo.CreateNoWindow = true;
+        ps.StartInfo.UseShellExecute = true;
+        ps.Start();
     }
 
     // Update is called once per frame
