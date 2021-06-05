@@ -12,24 +12,21 @@ public class csh1stCalculator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Process ps = new Process();
-        ps.StartInfo.FileName = "C:/Users/seo/AppData/Local/Programs/Python/Python38/python.exe";
-        ps.StartInfo.Arguments = "C:/Users/seo/Desktop/Michine_Learning_Capstone/seo/Assets/PythonCode/test.py";
-        ps.StartInfo.CreateNoWindow = true;
-        ps.StartInfo.UseShellExecute = true;
-        ps.Start();
     }
 
     // Update is called once per frame
     void Update()
     {
-        int[] sum = new int[4];
-        for(int i = 0; i<CCTV_cnt; i++)
-        {
-            for (int j = 0; j<CCTV_cnt; j++)
-                sum[i] += CCTV[j].GetComponent<cshCCTVData>().congestion;
-            
-            CCTV[i].GetComponent<cshCCTVData>().velocity = sum[i] / CCTV_cnt;
-        }
+
+        //T1 = (-2.63 * T2) + (1.9 * T3) - T4
+        //T2 = (T1 / 2.63) - (1.9 * T3 / 2.63) + (T4 / 2.63) 
+        //T3 = (T1 / 1.9) + (2.63 * T2 / 1.9) + (T4 / 1.9)
+        //T4 = T1 + (-2.63 * T2) + (1.9 * T3)
+
+        /*
+        수원신갈-기흥 7292
+        기흥-기흥동탄 7123
+        기흥동탄-동탄 6531
+        */
     }
 }
