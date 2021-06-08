@@ -16,7 +16,10 @@ public class cshCCTVText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        velocity.text = data.GetComponent<cshCCTVData>().velocity.ToString() + "km/h";
+        if(data.GetComponent<cshCCTVData>().velocity == 0)
+            velocity.text = "- km/h";
+        else
+            velocity.text = data.GetComponent<cshCCTVData>().velocity.ToString() + "km/h";
         congestion.text = data.GetComponent<cshCCTVData>().congestion.ToString() + "%";
     }
 }

@@ -7,7 +7,7 @@ public class cshCCTVData : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public int velocity, congestion;
+    public float velocity, congestion;
     public Slider slider;
     void Start()
     {
