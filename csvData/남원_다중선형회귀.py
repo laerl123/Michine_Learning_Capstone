@@ -1,3 +1,4 @@
+import csv
 import pandas as pd
 df = pd.read_csv("남원_202011부터_202104_빈데이터제거_교통량만_T버전.csv")
 from sklearn.model_selection import train_test_split
