@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
+import csv
 
 my_list=[['T1기울기','T1계수','T1최대교통량'],['T3기울기','T3계수','T3최대교통량'],['T5기울기','T5계수','T5최대교통량']]
 
