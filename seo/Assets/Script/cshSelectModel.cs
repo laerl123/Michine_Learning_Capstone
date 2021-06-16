@@ -1,45 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class cshSelectModel : MonoBehaviour
-{ 
+{
+    public CanvasGroup Alert;
+    public bool fade_in = false, fade_out = false;
+
+
     public void changeScene_1()
     {
-        GameObject.Find("Global").GetComponent<cshSceneState>().state = 1;
-        SceneManager.LoadScene("1stModel");
+        if (GameObject.Find("SceneNumber").GetComponent<cshSceneState>().state == 1)
+        {
+            Alert.GetComponent<cshAlertFade>().SetText(true);
+            Alert.gameObject.SetActive(true);
+            Alert.GetComponent<cshAlertFade>().startFadeIn();
+        }
+
+        else
+        {
+            Alert.GetComponent<cshAlertFade>().SetText(false);
+            Alert.gameObject.SetActive(true);
+            Alert.GetComponent<cshAlertFade>().startFadeIn();
+            Invoke("changeScene1", 1.0f);
+        }
     }
     public void changeScene_2()
     {
-        GameObject.Find("Global").GetComponent<cshSceneState>().state = 2;
-        SceneManager.LoadScene("2ndModel");
-    }
-    public void changeScene_3()
-    {
-        GameObject.Find("Global").GetComponent<cshSceneState>().state = 3;
-        SceneManager.LoadScene("3rdModel");
-    }
-    public void changeScene_select()
-    {
-        SceneManager.LoadScene("SelectModelScene");
-    }
-    public void changeScene_back()
-    {
-       switch(GameObject.Find("Global").GetComponent<cshSceneState>().state)
+        if (GameObject.Find("SceneNumber").GetComponent<cshSceneState>().state == 2)
         {
-            case 1:
-                SceneManager.LoadScene("1stModel");
-                break;
-            case 2:
-                SceneManager.LoadScene("2ndModel");
-                break;
-            case 3:
-                SceneManager.LoadScene("3rdModel");
-                break;
-            default:
-                break;
+            Alert.GetComponent<cshAlertFade>().SetText(true);
+            Alert.gameObject.SetActive(true);
+            Alert.GetComponent<cshAlertFade>().startFadeIn();
+        }
+
+        else
+        {
+            Alert.GetComponent<cshAlertFade>().SetText(false);
+            Alert.gameObject.SetActive(true);
+            Alert.GetComponent<cshAlertFade>().startFadeIn();
+            Invoke("changeScene2", 1.0f);
         }
     }
 
+    public void changeScene1()
+    {
+        SceneManager.LoadScene("1stModel");
+    }
+    public void changeScene2()
+    {
+        SceneManager.LoadScene("2ndModel");
+    }
 }

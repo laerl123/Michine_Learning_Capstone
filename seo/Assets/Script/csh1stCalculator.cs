@@ -17,6 +17,7 @@ public class csh1stCalculator : MonoBehaviour
         max[2] = 7123; //T3 구간 최대 교통량
         max[3] = 3000; //T4 구간 최대 교통량
         max[4] = 7500; //T5 구간 최대 교통량
+        CCTV = GameObject.FindGameObjectsWithTag("CCTVData");
     }
 
     // Update is called once per frame
