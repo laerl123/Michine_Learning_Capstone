@@ -57,19 +57,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\cshCCTVSliderData.cs" />
+    <Compile Include="Assets\Script\cshZoom.cs" />
     <Compile Include="Assets\Script\cshCCTVText.cs" />
     <Compile Include="Assets\Script\cshSelectModel.cs" />
+    <Compile Include="Assets\Script\cshAlertFade.cs" />
+    <Compile Include="Assets\Script\cshMoveCamera.cs" />
     <Compile Include="Assets\Script\cshPanelActive.cs" />
     <Compile Include="Assets\Script\cshCCTVData.cs" />
     <Compile Include="Assets\Script\csh1stCalculator.cs" />
     <Compile Include="Assets\Script\cshCCTVSliderText.cs" />
-    <Compile Include="Assets\Script\cshSceneState.cs" />
-    <Compile Include="Assets\Script\csh2ndCalculator.cs" />
-    <Compile Include="Assets\Script\cshAlertFade.cs" />
-    <Compile Include="Assets\Script\cshZoom.cs" />
-    <Compile Include="Assets\Script\cshMoveCamera.cs" />
     <Compile Include="Assets\Script\cshAllPanelControl.cs" />
+    <Compile Include="Assets\Script\cshSceneState.cs" />
     <Compile Include="Assets\Script\cshPanelFade.cs" />
+    <Compile Include="Assets\Script\csh2ndCalculator.cs" />
+    <Compile Include="Assets\Script\cshFirstScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

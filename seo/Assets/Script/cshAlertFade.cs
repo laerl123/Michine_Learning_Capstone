@@ -26,7 +26,7 @@ public class cshAlertFade : MonoBehaviour
         {
             
             alert.interactable = true;
-            alert.alpha += Time.deltaTime/0.1f;
+            alert.alpha += Time.deltaTime/0.3f;
             if (alert.alpha >= 1.0f)
             { 
                 fade_in = false;
@@ -35,7 +35,7 @@ public class cshAlertFade : MonoBehaviour
         else if(fade_out)
         {
             
-            alert.alpha -= Time.deltaTime/0.1f;
+            alert.alpha -= Time.deltaTime/0.3f;
             if (alert.alpha <= 0.0f)
             {
                 fade_out = false;
@@ -51,7 +51,7 @@ public class cshAlertFade : MonoBehaviour
 
     public void startFadeIn()
     {
-        Invoke("startFadeOut", 1.0f);
+        Invoke("startFadeOut", 2.0f);
         fade_in = true;
         
     }

@@ -12,6 +12,7 @@ public class cshSelectModel : MonoBehaviour
 
     public void changeScene_1()
     {
+        Debug.Log("클릭 됨");
         if (GameObject.Find("SceneNumber").GetComponent<cshSceneState>().state == 1)
         {
             Alert.GetComponent<cshAlertFade>().SetText(true);
